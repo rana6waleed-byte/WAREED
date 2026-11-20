@@ -1,14 +1,22 @@
 body {
     margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #252525;
+    background-color: #FFFFFF;
 }
 
+/* البار العلوي */
 .header-bar {
     background-color: #FFFFFF;
-    padding: 15px 20px;
     border-bottom: 1px solid #FCEBEC;
-    overflow: hidden;
+    padding: 15px 20px;
+}
+
+.header-inner {
     max-width: 1100px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .logo-box {
@@ -19,6 +27,17 @@ body {
     text-decoration: none;
     color: #252525;
     font-size: 20px;
+}
+
+.logo-box img {
+    width: 32px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.logo-box b {
+    vertical-align: middle;
+    margin-left: 8px;
 }
 
 .bar-box {
@@ -46,9 +65,10 @@ body {
     color: #FFFFFF;
 }
 
+/* الجزء الرئيسي */
 .main-section {
     background-color: #FCEBEC;
-    padding: 50px 20px;
+    padding: 50px 20px 80px 20px;
 }
 
 .main-inner {
@@ -121,6 +141,8 @@ body {
 }
 
 .how-it-works {
+    display: inline-block;
+    text-decoration: none;
     color: #B42332;
     font-size: 14px;
 }
@@ -135,14 +157,16 @@ body {
     max-width: 100%;
     height: auto;
 }
+
+/* كروت الإحصائيات */
 .stats-section {
-    background-color: #FCEBEC;
+    background-color: #FFFFFF;
     padding: 0 20px 50px 20px;
 }
 
 .stats-inner {
     max-width: 1100px;
-    margin: 0 auto;
+    margin: -40px auto 0 auto;
     overflow: hidden;
 }
 
@@ -151,6 +175,7 @@ body {
     width: 22%;
     margin-right: 4%;
     background-color: #FFFFFF;
+    border: 1px solid #FCEBEC;
     border-radius: 16px;
     padding: 25px 15px;
     text-align: center;
@@ -159,6 +184,11 @@ body {
 
 .stat-card:last-child {
     margin-right: 0;
+}
+
+.stat-card:hover {
+    border-color: #D94A55;
+    background-color: #FCEBEC;
 }
 
 .stat-card h2 {
@@ -180,4 +210,290 @@ body {
     font-size: 11px;
     padding: 4px 10px;
     border-radius: 12px;
+}
+
+.stats-note {
+    max-width: 1100px;
+    margin: 18px auto 0 auto;
+    text-align: center;
+    font-size: 13px;
+    color: #252525;
+}
+
+/* الأقسام العامة */
+.info-section {
+    padding: 60px 20px;
+}
+
+.pink-bg {
+    background-color: #FCEBEC;
+}
+
+.white-bg {
+    background-color: #FFFFFF;
+}
+
+.section-box {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 40px auto;
+}
+
+.section-label {
+    color: #B42332;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin: 0 0 8px 0;
+}
+
+.section-header h2 {
+    color: #252525;
+    font-size: 32px;
+    margin: 0 0 10px 0;
+}
+
+.section-header p {
+    color: #252525;
+    font-size: 15px;
+    margin: 0;
+}
+
+/* كروت لماذا نتبرع */
+.cards-row {
+    overflow: hidden;
+}
+
+.info-card {
+    float: left;
+    width: 22%;
+    margin-right: 4%;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 16px;
+    padding: 22px 16px;
+    box-sizing: border-box;
+}
+
+.info-card:last-child {
+    margin-right: 0;
+}
+
+.info-card:hover {
+    border-color: #D94A55;
+}
+
+.info-card h3 {
+    color: #252525;
+    font-size: 18px;
+    margin: 12px 0 8px 0;
+}
+
+.info-card p {
+    color: #252525;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* فصائل الدم */
+.blood-row {
+    overflow: hidden;
+}
+
+.blood-box {
+    float: left;
+    width: 10.75%;
+    margin-right: 2%;
+    margin-bottom: 14px;
+    background-color: #FFFFFF;
+    border: 1px solid #D94A55;
+    border-radius: 14px;
+    padding: 18px 8px;
+    text-align: center;
+    color: #B42332;
+    font-size: 22px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.blood-box:last-child {
+    margin-right: 0;
+}
+
+.blood-box:hover {
+    background-color: #FCEBEC;
+}
+
+.blood-box.selected-blood {
+    background-color: #B42332;
+    color: #FFFFFF;
+    border-color: #B42332;
+}
+
+.blood-info-box {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #FCEBEC;
+    border-radius: 14px;
+    text-align: center;
+    color: #252525;
+    font-size: 15px;
+}
+
+/* خطوات العمل */
+.steps-row {
+    overflow: hidden;
+}
+
+.step-card {
+    float: left;
+    width: 31%;
+    margin-right: 3.5%;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 16px;
+    padding: 24px 18px;
+    box-sizing: border-box;
+}
+
+.step-card:last-child {
+    margin-right: 0;
+}
+
+.step-card:hover {
+    border-color: #D94A55;
+}
+
+.step-num {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #D94A55;
+    color: #FFFFFF;
+    border-radius: 50%;
+    font-size: 18px;
+    margin-bottom: 14px;
+}
+
+.step-card h3 {
+    color: #252525;
+    font-size: 18px;
+    margin: 0 0 8px 0;
+}
+
+.step-card p {
+    color: #252525;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* دعوة للتسجيل */
+.cta-box {
+    background-color: #B42332;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 50px 25px;
+    border-radius: 22px;
+}
+
+.cta-box h2 {
+    margin: 0 0 10px 0;
+    font-size: 30px;
+}
+
+.cta-box p {
+    margin: 0 0 22px 0;
+    font-size: 15px;
+}
+
+.btn-light {
+    display: inline-block;
+    background-color: #FFFFFF;
+    color: #B42332;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+}
+
+.btn-light:hover {
+    background-color: #FCEBEC;
+}
+
+/* الفوتر */
+.footer-section {
+    background-color: #252525;
+    color: #FFFFFF;
+    padding: 50px 20px 20px 20px;
+}
+
+.footer-top {
+    overflow: hidden;
+    padding-bottom: 30px;
+}
+
+.footer-col-wide {
+    float: left;
+    width: 44%;
+    margin-right: 4%;
+    box-sizing: border-box;
+}
+
+.footer-col {
+    float: left;
+    width: 24%;
+    margin-right: 2%;
+    box-sizing: border-box;
+}
+
+.footer-col:last-child {
+    margin-right: 0;
+}
+
+.footer-section h3 {
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: 0 0 12px 0;
+}
+
+.footer-section p {
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 0 0 10px 0;
+}
+
+.footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.footer-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #D94A55;
+}
+
+.footer-bottom {
+    border-top: 1px solid #D94A55;
+    padding-top: 16px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 13px;
 }
