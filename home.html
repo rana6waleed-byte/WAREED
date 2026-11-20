@@ -1,29 +1,36 @@
 <html>
-    <head>
-        <title>WAREED</title>
-        <link rel="stylesheet" href="css/style.css" type="text/css">
-    </head>
-    <body>
-        <div class="header-bar">
+<head>
+    <title>WAREED | Donate Blood, Save Lives</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+
+    <!-- البار العلوي -->
+    <div class="header-bar">
+        <div class="header-inner">
             <div class="logo-box">
                 <a href="home.html">
-                    <img src="images/logo.jpg" alt="WAREED logo" height="30" width="20">
-                    <b> WAREED </b>
+                    <img src="images/logo.jpg" alt="WAREED logo" width="32">
+                    <b>WAREED</b>
                 </a>
             </div>
+
             <div class="bar-box">
                 <a href="home.html" class="active">Home</a>
-                <a href="registration.html">Register</a>
+                <a href="registration.html">Register as Donor</a>
                 <a href="find-donors.html">Find Donors</a>
                 <a href="blood-request.html">Blood Request</a>
                 <a href="dashboard.html">Dashboard</a>
             </div>
         </div>
-        <div class="main-section">
+    </div>
+
+    <!-- الجزء الرئيسي -->
+    <div class="main-section">
         <div class="main-inner">
             <div class="main-left">
                 <p class="badge">Every Drop Makes a Difference</p>
-                <h1>Donate Blood,<br>Save Lives<span>.</span></h1>
+                <h1>Donate Blood, <span>Save Lives.</span></h1>
                 <p class="subtitle">Every drop counts. Your donation can give someone another chance at life.</p>
 
                 <div class="main-buttons">
@@ -31,13 +38,16 @@
                     <a href="find-donors.html" class="btn-outline">Find Blood Donors</a>
                 </div>
 
+                <a href="#how-it-works" class="how-it-works">See how WAREED works &darr;</a>
             </div>
 
             <div class="main-right">
-                <img src="images/hero-blood.png" alt="Donate Blood Illustration">
+                <img src="images/hero-blood.jpg" alt="Donate Blood Illustration">
             </div>
         </div>
     </div>
+
+    <!-- كروت الإحصائيات -->
     <div class="stats-section">
         <div class="stats-inner">
             <div class="stat-card">
@@ -64,6 +74,151 @@
                 <span class="demo-tag">Demo data</span>
             </div>
         </div>
+        <p class="stats-note">These numbers are fictional examples for this university project. They are not real statistics.</p>
     </div>
-    </body>
+
+    <!-- لماذا نتبرع بالدم -->
+    <div class="info-section pink-bg" id="why-donate">
+        <div class="section-box">
+            <div class="section-header">
+                <p class="section-label">WHY IT MATTERS</p>
+                <h2>Why Donate Blood?</h2>
+                <p>Blood donation is a simple act of kindness that supports patients, families and communities.</p>
+            </div>
+
+            <div class="cards-row">
+                <div class="info-card">
+                    <img src="images/icon-heart.jpg" alt="" width="50" height="50">
+                    <h3>Support Patients</h3>
+                    <p>Blood is needed for surgeries, emergencies and the treatment of many illnesses.</p>
+                </div>
+
+                <div class="info-card">
+                    <img src="images/icon-drop.jpg" alt="" width="50" height="50">
+                    <h3>Cannot Be Made</h3>
+                    <p>Blood cannot be produced artificially, so hospitals depend on generous donors.</p>
+                </div>
+
+                <div class="info-card">
+                    <img src="images/icon-community.jpg" alt="" width="50" height="50">
+                    <h3>Strengthen Community</h3>
+                    <p>Every donor becomes part of a network that helps families when they need it most.</p>
+                </div>
+
+                <div class="info-card">
+                    <img src="images/icon-clock.jpg" alt="" width="50" height="50">
+                    <h3>A Small Time, A Big Gift</h3>
+                    <p>Donating takes only a short visit. Eligibility rules are set by health centers, so always ask them first.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- فصائل الدم -->
+    <div class="info-section white-bg" id="blood-groups">
+        <div class="section-box">
+            <div class="section-header">
+                <p class="section-label">KNOW YOUR TYPE</p>
+                <h2>Blood Groups</h2>
+                <p>Select a blood group to see who it can donate to and receive from.</p>
+            </div>
+
+            <div class="blood-row">
+                <button type="button" class="blood-box" onclick="showBloodInfo('A+', this)">A+</button>
+                <button type="button" class="blood-box" onclick="showBloodInfo('A-', this)">A-</button>
+                <button type="button" class="blood-box" onclick="showBloodInfo('B+', this)">B+</button>
+                <button type="button" class="blood-box" onclick="showBloodInfo('B-', this)">B-</button>
+                <button type="button" class="blood-box" onclick="showBloodInfo('AB+', this)">AB+</button>
+                <button type="button" class="blood-box" onclick="showBloodInfo('AB-', this)">AB-</button>
+                <button type="button" class="blood-box" onclick="showBloodInfo('O+', this)">O+</button>
+                <button type="button" class="blood-box" onclick="showBloodInfo('O-', this)">O-</button>
+            </div>
+
+            <div class="blood-info-box" id="blood-info-box">
+                Select a blood group above to see its details.
+            </div>
+        </div>
+    </div>
+
+    <!-- خطوات العمل -->
+    <div class="info-section pink-bg" id="how-it-works">
+        <div class="section-box">
+            <div class="section-header">
+                <p class="section-label">SIMPLE STEPS</p>
+                <h2>How It Works</h2>
+                <p>WAREED connects people who want to donate with people who need blood in three steps.</p>
+            </div>
+
+            <div class="steps-row">
+                <div class="step-card">
+                    <div class="step-num">1</div>
+                    <h3>Register as a Donor</h3>
+                    <p>Create your donor profile with your blood group, governorate and contact number.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-num">2</div>
+                    <h3>Find a Donor or Request Blood</h3>
+                    <p>Search for a suitable donor by blood group and governorate, or submit a blood request.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-num">3</div>
+                    <h3>Connect and Save a Life</h3>
+                    <p>Get in touch, arrange the donation and help someone in need.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- دعوة للتسجيل -->
+    <div class="info-section white-bg">
+        <div class="section-box">
+            <div class="cta-box">
+                <h2>Ready to Make a Difference?</h2>
+                <p>Join WAREED today. One donation can change a life.</p>
+                <a href="registration.html" class="btn-light">Register as a Donor</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- الفوتر -->
+    <div class="footer-section">
+        <div class="section-box">
+            <div class="footer-top">
+                <div class="footer-col-wide">
+                    <h3>WAREED</h3>
+                    <p>WAREED is a blood donation and donor connection platform. This is a university project and all data shown is fictional.</p>
+                    <p class="footer-tagline">WAREED - Every Drop Makes a Difference.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="registration.html">Register as Donor</a></li>
+                        <li><a href="find-donors.html">Find Donors</a></li>
+                        <li><a href="blood-request.html">Blood Request</a></li>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact (Sample)</h3>
+                    <ul class="footer-links">
+                        <li>Email: info@wareed.example</li>
+                        <li>Phone: 000 000 0000</li>
+                        <li>Address: Sample Street, Sample City</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 WAREED. University project. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/home.js"></script>
+</body>
 </html>
