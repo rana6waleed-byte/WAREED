@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>WAREED - Blood Request</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/request.css" type="text/css">
+    </head>
+    <body>
+        <div class="header-bar">
+            <div class="logo-box">
+                <a href="home.html">
+                    <img src="images/logo.jpg" alt="WAREED logo" height="30" width="20">
+                    <b> WAREED </b>
+                </a>
+            </div>
+            <div class="bar-box">
+                <a href="home.html">Home</a>
+                <a href="registration.html">Register</a>
+                <a href="find-donors.html">Find Donors</a>
+                <a href="blood-request.html" class="active">Blood Request</a>
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+        </div>
+
+        <div class="main-section">
+            <div class="request-inner">
+                <p class="badge">Need Blood Urgently?</p>
+                <h1 class="request-title">Blood Request<span>.</span></h1>
+                <p class="subtitle">Fill in the details below and we will help you find matching donors.</p>
+
+                <div class="request-card">
+                    <form id="requestForm">
+
+                        <h3>Hospital Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="hospital">Hospital Name</label>
+                                <input type="text" id="hospital" placeholder="Enter hospital name">
+                                <span class="error" id="hospitalError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Location</label>
+                                <input type="text" id="location" placeholder="Enter location">
+                                <span class="error" id="locationError"></span>
+                            </div>
+                        </div>
+
+                        <h3>Patient Information</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="patient">Patient Name</label>
+                                <input type="text" id="patient" placeholder="Enter patient name">
+                                <span class="error" id="patientError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="text" id="phone" placeholder="01XXXXXXXXX">
+                                <span class="error" id="phoneError"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Gender</label>
+                            <div class="radio-box">
+                                <label><input type="radio" name="gender" value="Male"> Male</label>
+                                <label><input type="radio" name="gender" value="Female"> Female</label>
+                            </div>
+                            <span class="error" id="genderError"></span>
+                        </div>
+
+                        <h3>Blood Details</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="bloodGroup">Blood Group Needed</label>
+                                <select id="bloodGroup">
+                                    <option value="">Select blood group</option>
+                                    <option>A+</option>
+                                    <option>A-</option>
+                                    <option>B+</option>
+                                    <option>B-</option>
+                                    <option>AB+</option>
+                                    <option>AB-</option>
+                                    <option>O+</option>
+                                    <option>O-</option>
+                                </select>
+                                <span class="error" id="bloodGroupError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="units">Number of Units</label>
+                                <input type="number" id="units" min="1" max="20" placeholder="1">
+                                <span class="error" id="unitsError"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="urgency">Urgency Level</label>
+                            <select id="urgency">
+                                <option value="">Select urgency</option>
+                                <option>Normal</option>
+                                <option>Urgent</option>
+                                <option>Critical</option>
+                            </select>
+                            <span class="error" id="urgencyError"></span>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Send Request</button>
+                    </form>
+
+                    <div id="successBox" class="success-box">
+                        <h2>Request Sent Successfully</h2>
+                        <p id="successText"></p>
+                        <a href="find-donors.html" class="btn-primary">Find Donors</a>
+                        <a href="dashboard.html" class="btn-outline">Go to Dashboard</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/request.js"></script>
+    </body>
+</html>

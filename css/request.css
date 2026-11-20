@@ -1,0 +1,131 @@
+.request-inner {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.request-title {
+    color: #252525;
+    font-size: 40px;
+    margin: 0 0 10px 0;
+}
+
+.request-title span {
+    color: #B42332;
+}
+
+.request-card {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 30px;
+}
+
+.request-card h3 {
+    color: #B42332;
+    font-size: 16px;
+    margin: 20px 0 12px 0;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #FCEBEC;
+}
+
+.request-card h3:first-child {
+    margin-top: 0;
+}
+
+.form-row {
+    overflow: hidden;
+}
+
+.form-row .form-group {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+
+.form-row .form-group:last-child {
+    margin-right: 0;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    color: #252525;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #FCEBEC;
+    border-radius: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #D94A55;
+}
+
+.form-group.has-error input,
+.form-group.has-error select {
+    border-color: #B42332;
+}
+
+.radio-box label {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.error {
+    display: block;
+    color: #B42332;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #D94A55;
+    color: #FFFFFF;
+    border: none;
+    padding: 13px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #B42332;
+}
+
+.success-box {
+    display: none;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.success-box h2 {
+    color: #B42332;
+}
+
+.success-box p {
+    color: #252525;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    .form-row .form-group {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+}
