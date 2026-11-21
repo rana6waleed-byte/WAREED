@@ -1,0 +1,174 @@
+
+<html>
+<head>
+    <title>WAREED | Donor Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/registration.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="header-bar">
+        <div class="header-inner">
+
+            <div class="logo-box">
+                <a href="home.html">
+                    <img src="images/logo.jpg" width="48" alt="WAREED">
+                    <b>WAREED</b>
+                </a>
+            </div>
+
+            <div class="bar-box">
+                <a href="home.html">Home</a>
+                <a href="registration.html" class="active">Register as Donor</a>
+                <a href="find-donors.html">Find Donors</a>
+                <a href="blood-request.html">Blood Request</a>
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Hero Banner -->
+    <div class="main-section">
+        <div class="main-inner">
+
+            <div class="main-left">
+
+                <p class="badge">Every Drop Makes a Difference</p>
+
+                <h1>
+                    Become a Donor,
+                    <span>Save Lives.</span>
+                </h1>
+
+                <p class="subtitle">
+                   <p>Join WAREED and become part of a community</p> 
+                      <p>that helps people in need.</p>
+                </p>
+
+                <div class="main-buttons">
+                    <a href="#registration-form" class="btn-primary">
+                        Register Now
+                    </a>
+
+                    <a href="home.html" class="btn-outline">
+                        Back to Home
+                    </a>
+                </div>
+
+                <a href="#registration-form" class="how-it-works">
+                    Complete Your Registration ↓
+                </a>
+
+            </div>
+
+            
+
+        </div>
+    </div>
+
+
+    <!-- Registration Form -->
+    <div class="registration-section" id="registration-form">
+
+        <div class="registration-heading">
+            <p>JOIN OUR COMMUNITY</p>
+            <h2>Donor Registration</h2>
+            <span>Fill in your information to register as a donor.</span>
+        </div>
+
+        <div class="registration-container">
+
+            <form onsubmit="return validateForm()">
+
+                <h3>Personal Information</h3>
+
+                <div class="personal-fields">
+
+                    <div class="field">
+                        <p>Full Name</p>
+                        <input type="text" id="fullName"
+                               class="form-input"
+                               placeholder="Enter your full name">
+                    </div>
+
+                    <div class="field">
+                        <p>Email Address</p>
+                        <input type="text" id="email"
+                               class="form-input"
+                               placeholder="Enter your email">
+                    </div>
+
+                    <div class="field">
+                        <p>Phone Number</p>
+                        <input type="text" id="phone"
+                               class="form-input"
+                               placeholder="Enter your phone number">
+                    </div>
+
+                    <div class="field">
+                        <p>Age</p>
+                        <input type="text" id="age"
+                               class="form-input"
+                               placeholder="Enter your age">
+                    </div>
+
+                </div>
+
+                <h3>Donation Information</h3>
+
+                <p>Gender</p>
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+
+                <p>Blood Group</p>
+                <select id="bloodGroup" class="form-input">
+                    <option value="">Choose your blood group</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+
+                <p>Governorate</p>
+                <input type="text" id="governorate"
+                       class="form-input"
+                       placeholder="Enter your governorate">
+
+                <p>Address</p>
+                <textarea id="address" class="form-input"
+                          placeholder="Enter your address"></textarea>
+
+                <p>Are you available to donate?</p>
+                <input type="radio" name="availability" value="Yes"> Yes
+                <input type="radio" name="availability" value="No"> No
+
+                <div class="form-buttons">
+                    <input type="submit" value="Register Now"
+                           class="submit-btn">
+
+                    <input type="reset" value="Clear Form"
+                           class="reset-btn">
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+
+    <div class="footer-section">
+        <p>© 2026 WAREED. Every Drop Makes a Difference.</p>
+    </div>
+
+    <script src="js/registration.js"></script>
+
+</body>
+</html>
